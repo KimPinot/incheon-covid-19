@@ -30,7 +30,7 @@ def formatInfo(info):
 
     for r in info:
         # 만약 patientNo가 0이라면 patientNoH로 값을 결정합니다.
-        if r["patientNo"] == 0:
+        if r["patientNo"] == "0":
             r["patientNo"] = r["patientNoH"]
 
         # result array에 값을 추가합니다.
