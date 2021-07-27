@@ -60,7 +60,7 @@ print("총 " + str(totalPage) + "건의 데이터를 발견했습니다.")
 for i in range(2, totalPage + 1):
     row = get_info(i)
     resultArray.extend(formatInfo(row["listObject"]))
-    time.sleep(0.5)
+    time.sleep(0.1)
 
 # csv file writer init
 file = open("./dist/info.csv", "w", newline="")
