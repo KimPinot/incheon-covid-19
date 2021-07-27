@@ -54,6 +54,7 @@ resultArray.extend(formatInfo(firstRow["listObject"]))
 
 # 전체 페이지의 값
 totalPage = firstRow["totalPage"]
+print("총 " + str(totalPage) + "건의 데이터를 발견했습니다.")
 
 # 2부터 totalPage + 1 까지 순회하며 0.5초 간격으로 데이터를 불러옵니다.
 for i in range(2, totalPage + 1):
