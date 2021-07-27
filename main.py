@@ -1,6 +1,7 @@
 import requests
 import time
 import csv
+import os
 
 # 결과값 테이블의 헤더입니다.
 # 주석과 바로 밑에 있는 데이터가 1:1 관계로 이어져 있습니다.
@@ -61,6 +62,9 @@ for i in range(2, totalPage + 1):
     row = get_info(i)
     resultArray.extend(formatInfo(row["listObject"]))
     time.sleep(0.1)
+
+# add dist folder
+os.mkdir("./dist")
 
 # csv file writer init
 file = open("./dist/info.csv", "w", newline="")
